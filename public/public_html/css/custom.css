@@ -1,0 +1,407 @@
+/*=============================================================
+    Authour URI: www.binarycart.com
+    License: Commons Attribution 3.0
+
+    http://creativecommons.org/licenses/by/3.0/
+
+    100% To use For Personal And Commercial Use.
+    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
+   
+    ========================================================  */
+/*==============================================
+    GENERAL  STYLES    
+    =============================================*/
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height:30px;
+    background: ;
+}
+
+ #wrapper {
+    width: 100%;
+    margin-top:65px;
+}
+
+#page-wrapper {
+    padding: 15px 15px;
+    min-height: 600px;
+    background:#F3F3F3;
+   
+}
+#page-inner {
+    width:100%;
+    margin:20px 20px 10px 0px;
+    background-color:#fff!important;
+    border: 1px solid gainsboro;
+    padding:10px;
+    min-height:760px;
+}
+.pad-top {
+    padding-top:-50px;
+}
+/*==============================================
+    MENU STYLES    
+    =============================================*/
+
+.sidebar-collapse .nav {
+	padding:0;
+    padding-top:0px;
+}
+
+.sidebar-collapse > .nav > li > a {
+	padding:10px 5px;
+    color: #aaabb0;
+    font-weight: 100;
+    font-size: 16px;
+}
+.sidebar-collapse > .nav > li {
+	border-bottom:1px solid #3d444e;
+}
+.sidebar-collapse .nav > li > a:hover,
+.sidebar-collapse .nav > li > a:focus {
+	
+	background:#2c303b;
+    color:white;
+	outline:0;
+}
+
+.navbar-side {
+	border:none;
+	background-color: #2e3442;
+	
+}
+.navbar-inverse {
+
+background-color: #00a2ff;
+border-bottom: 1px solid #00a2ff;
+min-height: 80px;
+color:white;
+}
+
+
+.nav > li > a > i {
+    margin-right:10px;
+}
+.logout-spn {
+    float:right;
+    color:#fff;
+    font-size:25px;
+    font-weight:800;
+    margin:20px;
+    margin: 10px 25px;
+}
+    .logout-spn a {
+        text-decoration:none;
+    }
+.active-link {
+    background-color:#2c303b;
+    color:white;
+}
+.spann{
+    float:right
+}    
+/*==============================================
+    DASHBOARD STYLES    
+    =============================================*/
+.div-square {
+    padding:5px;
+    border:3px double #e1e1e1;
+    -webkit-border-radius:8px;
+   -moz-border-radius:8px;
+    border-radius:8px;
+    margin:5px;
+
+}
+
+.div-square> a,.div-square> a:hover {
+    color:#808080;
+     text-decoration:none;
+}
+/*==============================================
+    FOOTER STYLES     
+    =============================================*/
+.footer {
+    background-color:#214761;
+    width:100%;
+    color:#fff;
+    padding:15px 45px 15px 45px;
+}
+
+
+.footer > a, .footer>a:hover {       
+   color:#fff;
+}
+
+/*==============================================
+    MEDIA QUERIES     
+    =============================================*/
+ 
+@media(min-width:768px) {
+    #page-wrapper{
+    margin: 0 0 0 260px;
+    padding: 15px 30px;
+    min-height: 760px;	
+}	
+	
+.navbar-side {
+    z-index: 1;
+    position: absolute;
+    width: 260px;   
+}
+}
+/*==============================================
+    LOGIN PAGE   
+    =============================================*/
+.loginpanel{
+    width:450px;margin-top:-50px;
+    box-shadow: 10px 10px 30px 1px #888888;
+}
+.signin{
+    margin-top:-5px;margin-bottom:15px;
+}
+.addon1{
+    background:#00bcd4;
+    color:white;
+    border: 1px solid #00bcd4;
+}
+.addon2{
+    background:#e91e63;
+    color:white;
+    border: 1px solid #e91e63;
+}
+.btnlogin{
+    background:#222c37;
+    color:white;
+    width:150px;
+    float:right;
+}
+.btnlogin:hover{
+    background-color: #1a222b;
+    color: white;
+}
+.btnlogin:focus{
+    background-color: #1a222b;
+    color: white;
+}
+/*==============================================
+    ACCOUNT FORM   
+    =============================================*/
+.btnuser-reset{
+    float:right;
+    margin-left: 5px;
+    width: 120px;
+    background-color: #e91e63;
+    color: white;
+}
+.btnuser-reset:hover{
+    background-color: #ff216c;
+    color: white;
+}
+.btnuser-reset:focus{
+    background-color: #ff216c;
+    color: white;
+}
+.btnuser-save{
+    float:right;
+    margin-left: 5px;
+    width: 120px;
+    background-color: #00bcd4;
+    color:white;
+}
+.btnuser-save:hover{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-save:focus{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-delete{
+    background-color: #e91e63;
+    color: white;
+    width: 80px;
+}
+.btnuser-delete:hover{
+    background-color: #ff216c;
+    color: white;
+}
+.btnuser-delete:focus{
+    background-color: #ff216c;
+    color: white;
+}
+.btnuser-edit{
+    background-color: #00bcd4;
+    color:white;
+    width: 80px;
+}
+.btnuser-edit:hover{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-edit:focus{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-delete1{
+    background-color: #00bcd4;
+    color:white;
+}
+.btnuser-delete1:hover{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-delete1:focus{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-cancel{
+    background-color: #e91e63;
+    color: white;
+}
+.btnuser-cancel:hover{
+    background-color: #ff216c;
+    color: white;
+}
+.btnuser-cancel:focus{
+    background-color: #ff216c;
+    color: white;
+}
+/*==============================================
+    HEADER BLADE  
+    =============================================*/
+.btnuser-logout{
+     background:#01cee8;
+    border:1px solid #01cee8;
+    color:white;
+}
+.btnuser-logout:hover{
+    background:#00bcd4;
+border:1px solid #00bcd4;
+    color:white;
+}
+.btnuser-logout:focus{
+    background:#00bcd4;
+border:1px solid #00bcd4;
+    color:white;
+}
+/*==============================================
+    DOWNLOAD PAGE 
+    =============================================*/
+.btnuser-download{
+    background-color: #00bcd4;
+    color: white;
+}    
+.btnuser-download:hover{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-download:focus{
+    background-color: #01cee8;
+    color: white;
+}
+/*==============================================
+    MAP PAGE 
+    =============================================*/
+.btnuser-submit{
+    background-color: #00bcd4; 
+    color:white;
+}
+.btnuser-submit:hover{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-submit:focus{
+    background-color: #01cee8;
+    color: white;
+}
+/*==============================================
+    STATISTICS PAGE 
+    =============================================*/
+.btnuser-submitquery{
+    background-color: #00bcd4;
+    color:white;
+}
+.btnuser-submitquery:hover{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-submitquery:focus{
+    background-color: #01cee8;
+    color: white;
+}
+/*==============================================
+    UPLOAD PAGE 
+    =============================================*/
+.btnuser-upload{
+    background-color: #00bcd4;
+    color:white;
+}
+.btnuser-upload:hover{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-upload:focus{
+    background-color: #01cee8;
+    color: white;
+}
+.btnuser-delete2{
+    background-color: #e91e63;
+    color: white;
+}
+.btnuser-delete2:hover{
+    background-color: #ff216c;
+    color: white;
+}
+.btnuser-delete2:focus{
+    background-color: #ff216c;
+    color: white;
+}
+/*==============================================
+    ICONS
+    =============================================*/
+.icons{
+    color:#223462;
+}
+/*==============================================
+    SIDE BLADE  
+    =============================================*/
+.side-fa{
+    float:right;
+    padding:10px;
+}
+.left-fa{
+    padding-left: 10px;
+}
+
+/*==============================================
+    HOME  
+    =============================================*/
+.btnuser-submithome{
+    background:#00bcd4;
+    color:white;
+    width:100px;
+height:35px;
+
+}
+.btnuser-submithome:hover{
+    background:#01cee8;
+    color:white;
+}
+.btnuser-submithome:focus{
+    background:#01cee8;
+    color:white;
+}
+
+.logostyle:hover{
+    background-color: #2c303b;
+}
+/*==============================================
+    LOGOS  
+    =============================================*/
+    .logotop1{
+        margin-top: 10px;
+        margin-left: 10px
+    }
+    .logotop{
+        margin-top:10px;
+    }

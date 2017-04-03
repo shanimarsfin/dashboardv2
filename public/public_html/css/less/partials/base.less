@@ -1,0 +1,167 @@
+/* Typography */
+@font-face {
+	font-family: "Century Gothic";
+	src: url("../fonts/Century Gothic.ttf");
+}
+@font-face {
+    font-family: "Century Gothic Bold";
+    src: url("../fonts/Century Gothic Bold.ttf");
+} 
+@font-face {
+    font-family: "Garamond";
+    src: url("../fonts/Garamond.ttf");
+} 
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway.ttf");
+} 
+
+/* Variables */
+@white: #ffffff;
+@black: #000000;
+@light_maroon: #731201;
+@maroon: #510b00;
+@light_blue: #0269cd;
+@blue: #0c467e;
+@gray: #5b6d66;
+@dark_grey: #333333;
+@gray_black: #4a4857;
+@body: "Century Gothic", sans-serif;
+@headers: "Garamond", sans-serif;
+@navigation: "Raleway", sans-serif;
+
+/* Mixins */
+.transition(@property, @duration) {
+  -webkit-transition: @property @duration;
+     -moz-transition: @property @duration;
+      -ms-transition: @property @duration;
+       -o-transition: @property @duration;
+          transition: @property @duration;
+}
+.transition() {
+  -webkit-transform: scale(1.05);
+	 -moz-transform: scale(1.05);
+	  -ms-transform: scale(1.05);
+	  -os-transform: scale(1.05);
+	      transform: scale(1.05);
+}
+.placeholder(@font, @color) {
+	&::-webkit-input-placeholder {
+		font-family: @font;
+		color: @color;
+	}
+	&:-moz-placeholder {
+		font-family: @font;
+		color: @color;
+	}
+	&:-ms-input-placeholder {
+		font-family: @font;
+		color: @color;
+	}
+	&:-os-input-placeholder {
+		font-family: @font;
+		color: @color;
+	}
+}
+
+
+/* States */
+.relative {
+	position: relative !important;
+}
+.absolute {
+	position: absolute !important;
+}
+.fixed {
+	position: fixed !important;
+}
+.hidden {
+	display: none !important;	
+}
+.inline {
+	display: inline !important;
+}
+.inline-block {
+	display: inline-block !important;
+}
+.block {
+	display: block !important;
+}
+.align-center {
+	text-align: center !important;
+}
+.align-left {
+	text-align: left !important;
+}
+.align-right {
+	text-align: right !important;
+}
+.align-justify {
+	text-align: justify !important;
+}
+.valign-top {
+	vertical-align: top !important;
+}
+.valign-middle {
+	vertical-align: middle !important;
+}
+.bold {
+	font-weight: bold !important;
+}
+.underline {
+	text-decoration: underline !important;
+}
+.no-underline {
+	text-decoration: none !important;
+}
+.uppercase {
+	text-transform: uppercase !important;
+}
+.not-uppercase {
+	text-transform: none !important;	
+}
+.white {
+	color: @white !important;
+}
+.black {
+	color: @black !important;
+}
+.blue {
+	color: @blue !important;
+}
+.maroon {
+	color: @maroon !important;
+}
+section.gray {
+	background-color: @gray !important;
+}
+section.blue {
+	background-color: @blue !important;
+}
+section.maroon {
+	background-color: @maroon !important;
+}
+.no-padding {
+	padding: 0 !important;
+}
+.no-margin {
+	margin: 0 !important;
+}
+
+
+/* Elements */
+body, html {
+	font-family: @body;
+	color: @gray_black;
+	.no-padding;
+	.no-margin;
+}
+
+* {
+	.transition(all, 0.2s);
+} 
+
+a, a:link, a:hover, a:active, a:visited {
+	color: @white;
+	.no-underline;
+}

@@ -1,0 +1,50 @@
+/* Typography */
+@font-face {
+  font-family: "Androgyne";
+  src: url("../fonts/Androgyne_TB.otf"); }
+  
+@font-face {
+  font-family: "ML";
+  src: url("../fonts/Montserrat-Light.otf"); }
+.navbar {
+	background-color:white;
+	/* border-bottom:1px solid gray; */
+}
+
+.admin #sidebar .panel {
+	margin-top:-1px;
+	border-radius: 0px;
+}
+
+.admin #sidebar .panel .list-group-item.active {
+	color: #F1B631;
+	background-color: #fff;
+	text-decoration:underline;
+}
+
+.admin #sidebar .panel .list-group-item.active:hover {
+	
+
+}
+
+.admin #sidebar .panel .panel-heading {
+	padding:15px 20px;
+	background-color:/* #eee */ #F1C667;
+}
+
+.admin #sidebar .panel .list-group a {
+	border:0px;
+}
+
+.admin #sidebar .panel .list-group a:hover {
+	background-color:#eee;
+}
+
+.admin #sidebar > h4 {
+	margin-left:5px;
+}
+
+.disabled {
+	cursor: no-drop !important;
+	color:#ccc !important;
+}

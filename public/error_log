@@ -1,0 +1,4 @@
+[10-Jul-2016 08:40:49 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or '$' in /home2/wahdashb/public_html/wah/app/Http/Controllers/MiscController.php on line 2025
+[10-Jul-2016 09:41:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home2/wahdashb/public_html/wah/app/Http/Controllers/MiscController.php on line 2420
+[10-Jul-2016 09:41:06 UTC] PHP Parse error:  syntax error, unexpected ''JOIN m_lib_health_faci' (T_ENCAPSED_AND_WHITESPACE) in /home2/wahdashb/public_html/wah/app/Http/Controllers/MiscController.php on line 2930
+[10-Jul-2016 09:53:11 UTC] PHP Parse error:  syntax error, unexpected ''" sty' (T_ENCAPSED_AND_WHITESPACE) in /home2/wahdashb/public_html/wah/app/Http/Controllers/MiscController.php on line 2122

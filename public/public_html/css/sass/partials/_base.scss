@@ -1,0 +1,128 @@
+/* Typography */
+@font-face 
+{
+    font-family: "Tex Gyre Bonum";
+    src: url("../fonts/Tex Gyre Bonum.otf");
+}
+
+
+/* Variables */
+$font: "Tex Gyre Bonum", sans-serif;
+$white: #FFFFFF;
+$black: #000000;
+$grey: #555;
+
+
+/* Mixins */
+@mixin transition($property, $duration) {
+  -webkit-transition: $property $duration;
+     -moz-transition: $property $duration;
+      -ms-transition: $property $duration;
+       -o-transition: $property $duration;
+          transition: $property $duration;
+}
+@mixin animate($keyframe, $duration) {
+  -webkit-animation: $keyframe $duration;
+     -moz-animation: $keyframe $duration;
+      -ms-animation: $keyframe $duration;
+       -o-animation: $keyframe $duration;
+          animation: $keyframe $duration;
+}
+@mixin placeholder($color) {
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+	&:-moz-placeholder {
+		color: $color;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+	}
+	&:-os-input-placeholder {
+		color: $color;
+	}
+}
+
+
+/* States */
+.is-hidden {
+	display: none;
+}
+.block {
+	display: block !important;
+}
+.inline-block {
+	display: inline-block !important;
+}
+.align-left {
+	text-align: left !important;
+}
+.align-center {
+	text-align: center !important;
+}
+.align-right {
+	text-align: right !important;
+}
+.align-justify {
+	text-align: justify !important;
+}
+.valign-top {
+	vertical-align: top !important;	
+}
+.valign-middle {
+	vertical-align: middle !important;	
+}
+.valign-bottom {
+	vertical-align: bottom !important;	
+}
+.bold {
+	font-weight: bold !important;
+}
+.italic {
+	font-style: italic !important;
+}
+.uppercase {
+	text-transform: uppercase !important;
+}
+.underline {
+	text-decoration: underline !important;
+}
+.no-underline {
+	text-decoration: none !important; 
+}
+.one-line {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.no-padding {
+	padding: 0 !important;
+}
+.no-margin {
+	margin: 0 !important;
+}
+
+
+/* Elements */
+body, html {
+	position: relative;
+	background: url("../imgs/BG.JPG") fixed no-repeat;
+	background-size: cover;
+	font-family: $font !important;
+	color: $white !important;
+	@extend .no-padding;
+	@extend .no-margin;
+}
+
+* {
+	@include transition(all, 0.2s);
+}	
+
+a, a:link, a:hover, a:active, a:visited {
+	color: $white;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.5 !important;
+}
