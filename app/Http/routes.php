@@ -32,6 +32,9 @@
 		}
 	}
 });*/
+Route::get('/',function(){
+	return view('login');
+});
 
 Route::get('/home', 'MiscController@get_home');
 
