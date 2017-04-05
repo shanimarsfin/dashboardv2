@@ -199,7 +199,7 @@
                       }
 
                     </script>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWGF94ii7wszN8QxFfhrExdHfiM1KllWw&region=PH&callback=initMap"
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsVpEBezxbT1akVJgSXNFiHyykL3LAkPU&region=PH&callback=initMap"
                     async defer></script>
                   </div>
                 </div>
