@@ -2919,8 +2919,11 @@ class MiscController extends Controller
 							$f_month = date('m', strtotime($grot->date_submitted));
 							$f_year = date('Y', strtotime($grot->date_submitted));
 							$f_day = date('d', strtotime($grot->date_submitted));
-
-							if($f_month == $month && $f_year == $year && ($f_day >= 01 && $f_day <= 07)){
+							
+							$submit_date = $f_month."/".$f_day."/".$f_year;
+							$deadline_date = $month+1 ."/07/". $year;
+							// if($f_month == ($month+1) && $f_year == $year && ($f_day >= 01 && $f_day <= 07)){
+							if(strtotime($submit_date) <= strtotime($deadline_date)){
 								++$count_on_time;
 								$on_time_reports .= '<span>' . $list_programs[$grot->program_fk] . ' - ' . $grot->date_submitted . '</span><br>';
 							}else{
